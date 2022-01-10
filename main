@@ -1,0 +1,35 @@
+#include "sculptor.h"
+#include "sculptor.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+    Sculptor carretilha(100,100,100);
+
+
+
+
+    carretilha.setColor(0.57,0.3,0,0.5);
+    carretilha.putBox(30,60,30,40,40,60);
+    carretilha.cutBox(32,58,31,40,42,58);
+
+    carretilha.setColor(0,0,0,0);
+    carretilha.putSphere(35,30,42,4);
+
+    carretilha.setColor(0,0,0,0);
+    carretilha.putSphere(55,30,42,4);
+
+    carretilha.setColor(0,0,0,0);
+    carretilha.putSphere(35,30,58,4);
+
+    carretilha.setColor(0,0,0,0);
+    carretilha.putSphere(55,30,58,4);
+
+
+    carretilha.writeOFF((char*)"carretilha.off");
+    return 0;
+}
